@@ -14,23 +14,18 @@ class School
    @roster[@grade] << @student_name
    else
     @roster[grade] = [@student_name]
-   end 
- end
+   
+ end 
+ 
    
    def grade(grade)
-     @grade = grade
-     @roster[@grade]
+      @roster[grade]
    end
-   
+
    def sort 
-     @roster.each_key |grade, name| do
+     @roster.each do |grade, name|
        name.sort!
      end
    end
-     
-   end
-
-end
-
-
+  end
 end
