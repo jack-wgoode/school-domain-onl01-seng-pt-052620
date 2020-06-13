@@ -14,7 +14,6 @@ class School
    @roster[@grade] << @student_name
    else
     @roster[grade] = [@student_name]
-   
  end 
  
    
@@ -26,6 +25,7 @@ class School
      @roster.each do |grade, name|
        name.sort!
      end
+     
    end
   end
 end
